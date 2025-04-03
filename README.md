@@ -1,20 +1,37 @@
-# Outlook Hidden Objects
-Defense Evasion - Outlook Hidden Objects
+## Outlook Hidden Objects - Defense Evasion \ Evading Pattern Detection ##
+
+Yet another way of inbox-manipulation-rules using characters that are hidden in ASCII to "hide" Outlook objects.<br/><br/>
 
 
-Outlook Hidden Objects
-
-Using hidden Unicode characters to hide Outlook objects, such as creating a "hidden" folder and hidden Inbox-Rule, and forwarding emails to the "hidden" folder by simply no-name it, just for fun.
-
-This can't be done via the GUI, so I PowerShell to do so.
-
-May trigger a web view authentication window to the user.
-
-Required PowerShell from an elevated shell.
-
-Tested with PSVersion 5.1.22621.4391.
 
 
+The silly idea came to me from "Search-StringInAD.ps1" which lookup for (hidden) Unicode characters in AD Objects (e.g hidden user):<br/>
+
+https://github.com/YossiSassi/Search-StringInAD/blob/main/Search-StringInAD.ps1
+
+
+
+From Microsoft documentation inbox-manipulation-rules Investigation steps:<br/>
+
+https://learn.microsoft.com/en-us/defender-xdr/alert-grading-playbook-inbox-manipulation-rules<br/><br/>
+
+
+
+_An attacker might manipulate the Inbox-rule only to emails that contain certain words. You can find these keywords under certain attributes such as: "BodyContainsWords," "SubjectContainsWords," or "SubjectOrBodyContainsWords."_<br/>
+
+Let's say the attacker does not name the rule; it can evade Subject-based pattern detection.<br/>
+
+For example, you can create a "hidden" folder and a hidden Inbox rule and forward emails to the "hidden" folder by simply naming it with hidden Unicode.
+
+
+
+* This can't be done via the GUI, so use PowerShell to do so.
+* May trigger a web view authentication window to the user.
+* equired PowerShell from an elevated shell.
+* Tested with PSVersion 5.1.22621.4391.
+
+
+**Note that it will create a pretty watermark and be present oddly in the UI (See the After screenshot)**
 
 
 
