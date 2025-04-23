@@ -7,7 +7,6 @@
 
 ### Inspired from:<br/>
 [Search-StringInAD](https://github.com/YossiSassi/Search-StringInAD) which lookup for (hidden) Unicode characters in AD Objects (e.g hidden account):<br/>
-Many other cool stuff in [YossiSassi/hAcKtive-Directory-Forensics](https://github.com/YossiSassi/hAcKtive-Directory-Forensics)
 <br/>
 
 From [Microsoft Inbox-manipulation-rules Investigation steps](https://learn.microsoft.com/en-us/defender-xdr/alert-grading-playbook-inbox-manipulation-rules):<br/>
