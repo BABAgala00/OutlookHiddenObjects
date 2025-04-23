@@ -1,4 +1,5 @@
-# Use Unicode to create Non-printable characters for creating a subfolder in the inbox folder. The same for a rule to forward messages that contain the word "test" in a subject and move them to the unnamed folder.
+# Use Hidden-Unicode characters to create Non-printable characters for creating a subfolder under the inbox. 
+# Use Hidden-Unicode characters to create an Inbox-rule to forward messages that contain the word "test" in the subject to the "Hidden" folder.
 
 # Define variables - replace these with your actual values
 $email = "<your.email@domain.com>"    # Replace with your full email
